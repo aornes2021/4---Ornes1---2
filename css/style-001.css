@@ -1,5 +1,10 @@
-   h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-            body {font-family: "Open Sans"}
+h1,h2,h3,h5,h6 {font-family: "Oswald"}
+body {font-family: 'Merriweather', serif;
+}
+
+h4{
+    font-family: "Oswald"}
+
 
 
 /* color themes */
@@ -26,3 +31,37 @@
 .w3-hover-text-theme:hover {color:#61d6d6 !important}
 .w3-hover-border-theme:hover {border-color:#61d6d6 !important}
 
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* SLideshow */
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1920px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: default;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}

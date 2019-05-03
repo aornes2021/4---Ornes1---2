@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/style-001.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
@@ -39,18 +39,61 @@ and is wrapped around the whole page content, except for the footer in this exam
 
             <!-- Header -->
             <header class="w3-container w3-center w3-padding-48 w3-theme-13">
-                <h1 class="w3-jumbo w3-text-light-green"><b>Víva</b></h1>
-                <h6 class="w3-large"><h3>Welcome to the product page of the Víva Diffuser</h3></h6>
+                <h1 class="w3-jumbo w3-text-light-green"><b>Víva<img src="img/greenleaf.png" alt="leaf" style="width:3%" class="w3-middle"></b></h1>
+                <h6 class="w3-large"><h3>Meet the Víva Diffuser</h3></h6>
             </header>
 
             <!-- Image header -->
-            <header class="w3-display-container w3-medium" id="home">
-                <div class="w3-col s12">
-                    <div class="w3-container w3-white w3-margin w3-padding-small w3-center">
-                        <img class="w3-image" src="img/best-diffusers-1.jpg" alt="Viva" width="610">
-                    </div>
+            <div>
+                <div class="w3-justify w3-center">
+                    <header class="w3-display-container w3-white w3-wide" id="home">
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 7</div>
+                                <img src="img/slideshow1.jpg" style="width:30%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 7</div>
+                                <img src="img/slideshow2.jpg" style="width:15%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 7</div>
+                                <img src="img/slideshow3.png" style="width:30%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 7</div>
+                                <img src="img/slideshow4.jpg" style="width:30%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">5 / 7</div>
+                                <img src="img/slideshow5.jpg" style="width:40%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">6 / 7</div>
+                                <img src="img/slideshow6.jpg" style="width:40%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">7 / 7</div>
+                                <img src="img/bottles%20on%20box.png" style="width:40%">
+                            </div>
+
+                            <a class="prev w3-xxlarge w3-center" onclick="plusSlides(-1)">&#8678;</a>
+                            <a class="next w3-xxlarge w3-center" onclick="plusSlides(1)">&#8680;</a>
+
+                        </div>
+                        <br>
+
+                    </header>
                 </div>
-            </header>
+            </div>
+
 
             <!-- Grid -->
             <div class="w3-row w3-padding w3-border">
@@ -62,12 +105,11 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <div class="w3-container w3-white w3-margin w3-padding-large">
                         <div class="w3-center"><h1 id="Product Details" class="section-title">Product Details</h1>
                         </div>
-
                         <div class="w3-justify">
                             <img src="img/color%20ranges.jpg" alt="Girl Hat" style="width:50%" class="w3-middle w3-padding-16">
                             <p> Featuring the latest in aromatherapy technology, the Viva Naturals Ultrasonic Diffuser uses less oil than other diffusers, vaporizing without the use of heat to maximize the benefits of your favorite essential oils. Savor their calming or energizing properties as the delicate mist fills your room with pure, therapeutic delight. Complimented by a selection of built-in LED lights to deepen the sensory experience, the Viva Naturals Ultrasonic Diffuser makes it easy to incorporate the benefits of aromatherapy into your everyday life.</p>
 
-                            <p>Features....</p>
+                            <h4>Features Include...</h4>
                             <p>Unique & Contemporary Design</p> 
                             <p>Large 100ml Tank for Up to 8 Hours of Use</p> 
                             <p>Ultrasonic & Whisper Quiet
@@ -103,6 +145,17 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <p>Boosts Memory & Concentration</p>
                             <p>Controls Appetite</p>
                             <p>Pain Relief</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-light-green">Side Effects</button>
+                            
+                            <div id="id01" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <div class="w3-container">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                        <p>Some oils produce toxins which can cause damage to the liver, kidneys, and nervous system, especially if taken internally. Swallowing essential oils can be hazardous, and fatal in some cases.</p>
+                                        <p>Individuals with any of the following conditions should be extra careful when using aromatherapy: An allergy, or allergies, pregancy</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,6 +199,8 @@ and is wrapped around the whole page content, except for the footer in this exam
         <footer class="w3-container" style="padding:10px">
             <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         </footer>
+
+        <script src="js/slideshow.js"></script>
 
     </body>
 </html>
