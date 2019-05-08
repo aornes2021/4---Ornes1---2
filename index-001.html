@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 
     </head>
     <!-- test github native -->
@@ -20,8 +22,7 @@
             <a href="#Home" class="w3-bar-item w3-button">Home</a>
             <a href="#Product Details" class="w3-bar-item w3-button w3-hide-small">Product Details</a>
             <a href="#Health Benefits" class="w3-bar-item w3-button w3-hide-small">Health Benefits</a>
-            <a href="#Products" class="w3-bar-item w3-button w3-hide-small">Products</a>
-            <a href="#Contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+            <a href="#Product Info" class="w3-bar-item w3-button w3-hide-small">Product Info</a>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
         </div>
 
@@ -30,7 +31,6 @@
             <a href="#Product Details" class="w3-bar-item w3-button">Product Details</a>
             <a href="#Health Benefits" class="w3-bar-item w3-button">Health Benefits</a>
             <a href="#Products" class="w3-bar-item w3-button">Products</a>
-            <a href="#Contact" class="w3-bar-item w3-button">Contact</a>
         </div>
 
         <!-- w3-content defines a container for fixed size centered content, 
@@ -145,21 +145,12 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <p>Boosts Memory & Concentration</p>
                             <p>Controls Appetite</p>
                             <p>Pain Relief</p>
-                            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-light-green">Side Effects</button>
-                            
-                            <div id="id01" class="w3-modal">
-                                <div class="w3-modal-content">
-                                    <div class="w3-container">
-                                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                                        <p>Some oils produce toxins which can cause damage to the liver, kidneys, and nervous system, especially if taken internally. Swallowing essential oils can be hazardous, and fatal in some cases.</p>
-                                        <p>Individuals with any of the following conditions should be extra careful when using aromatherapy: An allergy, or allergies, pregancy</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Blog entries -->
             <div class="w3-col s12">
@@ -167,26 +158,33 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <!-- Blog entry -->
                 <div class="w3-container w3-white w3-margin w3-padding-large">
                     <div class="w3-center">
-                        <h1 id="Products" class="section-title">Products</h1>
+                        <h1 id="Product Info" class="section-title">Product Info</h1>
 
 
-                        <div class="w3-justify">
-                            <p>Víva naturals has three models of essential oil diffusers.</p>
-                            <img src="img/zen%20diffuser.png" alt="Runway" style="width:20%" class="w3-padding-18"><p>Zen Diffuser $17</p>
-                            <img src="img/tranquil%20diffuser.png" alt="Runway" style="width:20%" class="w3-padding-18"><p>Tranquil Diffuser $20</p>
-                            <img src="img/blue%20originoal.jpg" alt="Runway" style="width:11%" class="w3-padding-18"><p>Original Diffuser $11</p>
+                        <div class="w3-container w3-center">
+                            <p>Víva Naturals Essential Oil Diffusers.</p>
 
-                            <!-- END BLOG ENTRIES -->
+                            <img src="img/slideshow2.jpg" style="width:15%;cursor:zoom-in"
+                                 onclick="document.getElementById('modal01').style.display='block'">
+
+                            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                                <span class="w3-button w3-hover-light-green w3-xlarge w3-display-topright">&times;</span>
+                                <div class="w3-modal-content w3-animate-zoom">
+                                    <p>Our ultrasonic diffuser uses less oil than other diffusers and vaporizes without the use of heat. As the oils break down, they release a soothing mist and fragrant aroma that surrounds any room. Improves air quality.</p> 
+                                  <p>Product quantity</p>
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select><p></p>
+ <i class="fas fa-shopping-cart fa-2x"></i><p>Add to cart</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Subscribe -->
-                <div class="w3-white w3-margin">
-                    <div class="w3-container w3-theme-13">
-                        <p>Enter your e-mail below and get notified on the latest updates.</p>
-                        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-                        <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-theme-d4">Subscribe</button></p>
+
+                        <!-- END BLOG ENTRIES -->
                     </div>
                 </div>
             </div>
