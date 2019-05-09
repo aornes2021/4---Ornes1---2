@@ -164,25 +164,29 @@ and is wrapped around the whole page content, except for the footer in this exam
                         <div class="w3-container w3-center">
                             <p>Víva Naturals Essential Oil Diffusers.</p>
 
-                            <img src="img/slideshow2.jpg" style="width:15%;cursor:zoom-in"
+                          
+                            <div class="w3-container">
+                                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-white">       <img src="img/slideshow2.jpg" style="width:15%;cursor:zoom-in"
                                  onclick="document.getElementById('modal01').style.display='block'">
+</button>
 
-                            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                                <span class="w3-button w3-hover-light-green w3-xlarge w3-display-topright">&times;</span>
-                                <div class="w3-modal-content w3-animate-zoom">
-                                    <p>Our ultrasonic diffuser uses less oil than other diffusers and vaporizes without the use of heat. As the oils break down, they release a soothing mist and fragrant aroma that surrounds any room. Improves air quality.</p> 
-                                  <p>Product quantity</p>
-                                    <select>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select><p></p>
- <i class="fas fa-shopping-cart fa-2x"></i><p>Add to cart</p>
+                                <div id="id01" class="w3-modal">
+                                    <div class="w3-modal-content">
+                                        <div class="w3-container">
+                                            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                            <p>Our ultrasonic diffuser uses less oil than other diffusers and vaporizes without the use of heat. As the oils break down, they release a soothing mist and fragrant aroma that surrounds any room. Improves air quality.</p>
+                                            <p>Product quantity</p>
+                                            <select>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select><p></p>
+                                            <i class="fas fa-shopping-cart fa-2x"></i><p>Add to cart</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
 
                         <!-- END BLOG ENTRIES -->
                     </div>
